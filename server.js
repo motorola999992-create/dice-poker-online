@@ -1,4 +1,4 @@
-}
+
 wss.on('connection', ws=>{
   const id=crypto.randomUUID();clients.set(id,{ws,name:'Jucător',room:null});send(ws,{type:'connected',id});
   ws.on('message', raw=>{
